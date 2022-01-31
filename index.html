@@ -1,0 +1,606 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <link href="css/app.css" rel="stylesheet">
+
+  
+</head>
+
+<body>
+
+  <div class="fixed top-0 inset-x-0">
+    <nav id="navbar" class="bg-transparent transition-colors duration-300 border-gray-200 px-2 sm:px-4 py-2.5">
+      <div class="container flex flex-wrap justify-between items-center w-4/5 mx-auto">
+        <a href="#home" class="flex">
+         
+          <span id="navTitle"
+            class="self-center text-2xl duration-300 whitespace-nowrap text-white">EngraveMaster</span>
+        </a>
+        
+        <button data-collapse-toggle="mobile-menu" type="button"
+          class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
+          aria-controls="mobile-menu-2" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
+
+        <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+          <ul id="navBarList" class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+            <li>
+              <a href="#home"
+                class=" font-bold text-md transition-colors duration-300 block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-secondary dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 activeNav"
+                aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="#aboutMe"
+                class="font-bold text-md transition-colors duration-300 block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-secondary dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+            </li>
+            <li>
+              <a href="#materials"
+                class="font-bold text-md transition-colors duration-300 block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-secondary dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Materials</a>
+            </li>
+            <li>
+              <a href="#wood-products"
+                class="font-bold text-md transition-colors duration-300 block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-secondary dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Products</a>
+            </li>
+            <li>
+              <a href="#contact"
+                class="font-bold text-md transition-colors duration-300 block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-secondary dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  <section id="home" class="banner flex flex-col justify-center font-ubuntu text-white">
+
+    
+
+    <div class="w-4/5 mx-auto">
+      <div class=" my-2 text-4xl">
+        <h1 class=" text-6xl">EngraveMaster</h1>
+      </div>
+      <div class="pb-6 my-2 text-3xl">
+        <h2>Custom Laser Creations</h2>
+      </div>
+      <div class="my-2">
+        <a href="#portfolio">
+          <button type="button"
+            class="px-5 text-white bg-primary hover:bg-secondary focus:ring-4 focus:ring-yellow-300 font-medium rounded-sm text-sm  py-2.5 text-center mb-2 dark:focus:ring-yellow-900 ">Learn
+            More</button>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  
+  <section id="aboutMe" class="text-gray-600 body-font bg-bgSecondary">
+    <div class="w-4/5 flex flex-wrap px-5 py-24 mx-auto items-center">
+        <div class="md:w-9/12 md:pr-12 md:py-8 md:border-r-2 md:border-b-0 mb-10 md:mb-0 pb-10 border-gray-200">
+            
+            <div class="w-full mb-6 lg:mb-6">
+                <h1 class="sm:text-4xl text-5xl font-bold title-font mb-2 text-gray-900">About</h1>
+                
+                <div class="h-1 w-20 bg-primary rounded"></div>
+              </div>
+            <p class="leading-relaxed text-base">Engrave Master offers laser engraving services for a wide range of materials. We offer laser engraving for wood, transparent plastics , glass and some metals. If you need to engrave your custom design on the products, you’ve come to the right place. We design and we laser engrave. 
+  Engrave Master provides the materials needed for the engraving process, allowing you to send in designs and laser engrave them to have the features you need in the highest detail possible. 
+  Engrave Master’s laser engraving services are available for anything from a single unit to a mass production lot purchase. So whether you need a single engraved product or mass production, Engrave Master has you covered!
+  Send your enquiry via email and we will contact you for further details.</p>
+        </div>
+        <div class="md:flex md:flex-col md:w-3/12 md:pl-12 bg hidden">
+            <div class=" aboutPhoto border-4 border-primary rounded-full w-44 h-44"></div>
+        </div>
+    </div>
+</section>
+  
+
+  <section id="materials" class="text-gray-600 body-font ">
+    <div class="container px-5 py-24 mx-auto">
+      
+      <div class="flex flex-wrap -m-4 ">
+
+        <div class="p-10 md:w-1/3 ">
+    <a href="#wood-products">
+        <div
+            class="bg-white p-5 h-full rounded-lg overflow-hidden">
+            <div class="grid justify-items-center">
+                
+                    <img class=" rounded-full xl:h-48 lg:h-48 md:h-28 xl:w-48 lg:w-48 md:w-28 h-10 w-10 object-cover object-center"
+                    src="http://localhost:8000/images/wood-material.webp" alt="blog">
+            </div>
+            <div class="pt-4">
+                
+                <h1 class="title-font text-center text-lg font-medium text-gray-900 mb-3">Wood</h1>
+                <p class="text-center leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                
+            </div>
+        </div>
+    </a>
+</div>
+        <div class="p-10 md:w-1/3 ">
+    <a href="#metal-products">
+        <div
+            class="bg-white p-5 h-full rounded-lg overflow-hidden">
+            <div class="grid justify-items-center">
+                
+                    <img class=" rounded-full xl:h-48 lg:h-48 md:h-28 xl:w-48 lg:w-48 md:w-28 h-10 w-10 object-cover object-center"
+                    src="http://localhost:8000/images/metal-material.webp" alt="blog">
+            </div>
+            <div class="pt-4">
+                
+                <h1 class="title-font text-center text-lg font-medium text-gray-900 mb-3">Metal</h1>
+                <p class="text-center leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                
+            </div>
+        </div>
+    </a>
+</div>
+        <div class="p-10 md:w-1/3 ">
+    <a href="#glass-products">
+        <div
+            class="bg-white p-5 h-full rounded-lg overflow-hidden">
+            <div class="grid justify-items-center">
+                
+                    <img class=" rounded-full xl:h-48 lg:h-48 md:h-28 xl:w-48 lg:w-48 md:w-28 h-10 w-10 object-cover object-center"
+                    src="http://localhost:8000/images/glass-material.webp" alt="blog">
+            </div>
+            <div class="pt-4">
+                
+                <h1 class="title-font text-center text-lg font-medium text-gray-900 mb-3">Glass/acrylic</h1>
+                <p class="text-center leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                
+            </div>
+        </div>
+    </a>
+</div>
+      </div>
+    </div>
+  </section>
+
+
+  
+  <section id="wood-products" class="text-gray-600 body-font bg-bgSecondary">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-8">
+        <div class="w-full mb-6 lg:mb-0">
+          <h1 class="sm:text-4xl text-5xl font-bold title-font mb-2 text-gray-900">Wood Products</h1>
+          
+          <div class="h-1 w-20 bg-primary rounded"></div>
+        </div>
+      </div>
+      <div class="flex flex-wrap -m-4">
+
+        <div class="lg:w-1/4 p-4 w-1/2">
+    
+    <a class="block  h-48 rounded overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+            src="http://localhost:8000/images/products/wood-p1.jpg">
+    </a>
+    <div class="mt-4">
+
+        <h2 class="text-gray-900 title-font text-lg font-medium">houehoue</h2>
+        <p class="mt-1">#1234</p>
+    </div>
+</div>
+        <div class="lg:w-1/4 p-4 w-1/2">
+    
+    <a class="block  h-48 rounded overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+            src="http://localhost:8000/images/products/wood-p1.jpg">
+    </a>
+    <div class="mt-4">
+
+        <h2 class="text-gray-900 title-font text-lg font-medium">houehoue</h2>
+        <p class="mt-1">#5464</p>
+    </div>
+</div>
+
+        <div class="lg:w-1/4 p-4 w-1/2">
+    
+    <a class="block  h-48 rounded overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+            src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg">
+    </a>
+    <div class="mt-4">
+
+        <h2 class="text-gray-900 title-font text-lg font-medium">Online</h2>
+        <p class="mt-1">#5464</p>
+    </div>
+</div>
+        <div class="lg:w-1/4 p-4 w-1/2">
+    
+    <a class="block  h-48 rounded overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+            src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg">
+    </a>
+    <div class="mt-4">
+
+        <h2 class="text-gray-900 title-font text-lg font-medium">Online</h2>
+        <p class="mt-1">#5464</p>
+    </div>
+</div>
+        <div class="lg:w-1/4 p-4 w-1/2">
+    
+    <a class="block  h-48 rounded overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+            src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg">
+    </a>
+    <div class="mt-4">
+
+        <h2 class="text-gray-900 title-font text-lg font-medium">Online</h2>
+        <p class="mt-1">#5464</p>
+    </div>
+</div>
+        <div class="lg:w-1/4 p-4 w-1/2">
+    
+    <a class="block  h-48 rounded overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+            src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg">
+    </a>
+    <div class="mt-4">
+
+        <h2 class="text-gray-900 title-font text-lg font-medium">Online</h2>
+        <p class="mt-1">#5464</p>
+    </div>
+</div>
+        <div class="lg:w-1/4 p-4 w-1/2">
+    
+    <a class="block  h-48 rounded overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+            src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg">
+    </a>
+    <div class="mt-4">
+
+        <h2 class="text-gray-900 title-font text-lg font-medium">Online</h2>
+        <p class="mt-1">#5464</p>
+    </div>
+</div>
+        <div class="lg:w-1/4 p-4 w-1/2">
+    
+    <a class="block  h-48 rounded overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+            src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg">
+    </a>
+    <div class="mt-4">
+
+        <h2 class="text-gray-900 title-font text-lg font-medium">Online</h2>
+        <p class="mt-1">#5464</p>
+    </div>
+</div>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="metal-products" class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-8">
+        <div class="w-full mb-6 lg:mb-0">
+          <h1 class="sm:text-4xl text-5xl font-bold title-font mb-2 text-gray-900">Metal Products</h1>
+          
+          <div class="h-1 w-20 bg-primary rounded"></div>
+        </div>
+      </div>
+      <div class="flex flex-wrap -m-4">
+
+        <div class="lg:w-1/4 p-4 w-1/2">
+    
+    <a class="block  h-48 rounded overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+            src="http://localhost:8000/images/products/wood-p1.jpg">
+    </a>
+    <div class="mt-4">
+
+        <h2 class="text-gray-900 title-font text-lg font-medium">houehoue</h2>
+        <p class="mt-1">#1234</p>
+    </div>
+</div>
+        <div class="lg:w-1/4 p-4 w-1/2">
+    
+    <a class="block  h-48 rounded overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+            src="http://localhost:8000/images/products/wood-p1.jpg">
+    </a>
+    <div class="mt-4">
+
+        <h2 class="text-gray-900 title-font text-lg font-medium">houehoue</h2>
+        <p class="mt-1">#5464</p>
+    </div>
+</div>
+
+        <div class="lg:w-1/4 p-4 w-1/2">
+    
+    <a class="block  h-48 rounded overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+            src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg">
+    </a>
+    <div class="mt-4">
+
+        <h2 class="text-gray-900 title-font text-lg font-medium">Online</h2>
+        <p class="mt-1">#5464</p>
+    </div>
+</div>
+        <div class="lg:w-1/4 p-4 w-1/2">
+    
+    <a class="block  h-48 rounded overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+            src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg">
+    </a>
+    <div class="mt-4">
+
+        <h2 class="text-gray-900 title-font text-lg font-medium">Online</h2>
+        <p class="mt-1">#5464</p>
+    </div>
+</div>
+        <div class="lg:w-1/4 p-4 w-1/2">
+    
+    <a class="block  h-48 rounded overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+            src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg">
+    </a>
+    <div class="mt-4">
+
+        <h2 class="text-gray-900 title-font text-lg font-medium">Online</h2>
+        <p class="mt-1">#5464</p>
+    </div>
+</div>
+        <div class="lg:w-1/4 p-4 w-1/2">
+    
+    <a class="block  h-48 rounded overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+            src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg">
+    </a>
+    <div class="mt-4">
+
+        <h2 class="text-gray-900 title-font text-lg font-medium">Online</h2>
+        <p class="mt-1">#5464</p>
+    </div>
+</div>
+        <div class="lg:w-1/4 p-4 w-1/2">
+    
+    <a class="block  h-48 rounded overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+            src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg">
+    </a>
+    <div class="mt-4">
+
+        <h2 class="text-gray-900 title-font text-lg font-medium">Online</h2>
+        <p class="mt-1">#5464</p>
+    </div>
+</div>
+        <div class="lg:w-1/4 p-4 w-1/2">
+    
+    <a class="block  h-48 rounded overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+            src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg">
+    </a>
+    <div class="mt-4">
+
+        <h2 class="text-gray-900 title-font text-lg font-medium">Online</h2>
+        <p class="mt-1">#5464</p>
+    </div>
+</div>
+
+      </div>
+    </div>
+  </section>
+
+
+  
+  <section id="glass-products" class="text-gray-600 body-font bg-bgSecondary">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-8">
+        <div class="w-full mb-6 lg:mb-0">
+          <h1 class="sm:text-4xl text-5xl font-bold title-font mb-2 text-gray-900">Acrylic Products</h1>
+          
+          <div class="h-1 w-20 bg-primary rounded"></div>
+        </div>
+      </div>
+      <div class="flex flex-wrap -m-4">
+
+        <div class="lg:w-1/4 p-4 w-1/2">
+    
+    <a class="block  h-48 rounded overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+            src="http://localhost:8000/images/products/wood-p1.jpg">
+    </a>
+    <div class="mt-4">
+
+        <h2 class="text-gray-900 title-font text-lg font-medium">houehoue</h2>
+        <p class="mt-1">#1234</p>
+    </div>
+</div>
+        <div class="lg:w-1/4 p-4 w-1/2">
+    
+    <a class="block  h-48 rounded overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+            src="http://localhost:8000/images/products/wood-p1.jpg">
+    </a>
+    <div class="mt-4">
+
+        <h2 class="text-gray-900 title-font text-lg font-medium">houehoue</h2>
+        <p class="mt-1">#5464</p>
+    </div>
+</div>
+
+        <div class="lg:w-1/4 p-4 w-1/2">
+    
+    <a class="block  h-48 rounded overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+            src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg">
+    </a>
+    <div class="mt-4">
+
+        <h2 class="text-gray-900 title-font text-lg font-medium">Online</h2>
+        <p class="mt-1">#5464</p>
+    </div>
+</div>
+        <div class="lg:w-1/4 p-4 w-1/2">
+    
+    <a class="block  h-48 rounded overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+            src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg">
+    </a>
+    <div class="mt-4">
+
+        <h2 class="text-gray-900 title-font text-lg font-medium">Online</h2>
+        <p class="mt-1">#5464</p>
+    </div>
+</div>
+        <div class="lg:w-1/4 p-4 w-1/2">
+    
+    <a class="block  h-48 rounded overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+            src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg">
+    </a>
+    <div class="mt-4">
+
+        <h2 class="text-gray-900 title-font text-lg font-medium">Online</h2>
+        <p class="mt-1">#5464</p>
+    </div>
+</div>
+        <div class="lg:w-1/4 p-4 w-1/2">
+    
+    <a class="block  h-48 rounded overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+            src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg">
+    </a>
+    <div class="mt-4">
+
+        <h2 class="text-gray-900 title-font text-lg font-medium">Online</h2>
+        <p class="mt-1">#5464</p>
+    </div>
+</div>
+        <div class="lg:w-1/4 p-4 w-1/2">
+    
+    <a class="block  h-48 rounded overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+            src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg">
+    </a>
+    <div class="mt-4">
+
+        <h2 class="text-gray-900 title-font text-lg font-medium">Online</h2>
+        <p class="mt-1">#5464</p>
+    </div>
+</div>
+        <div class="lg:w-1/4 p-4 w-1/2">
+    
+    <a class="block  h-48 rounded overflow-hidden">
+        <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+            src="https://star-name-registry.com/blog/images/d/0/1/f/a/d01faec7ef04415eec34c1bfe61913e167fb26c7-snr-blog-37-resized.jpg">
+    </a>
+    <div class="mt-4">
+
+        <h2 class="text-gray-900 title-font text-lg font-medium">Online</h2>
+        <p class="mt-1">#5464</p>
+    </div>
+</div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="bg-contactColor ">
+    <div class="w-4/5 mx-auto py-10">
+      <div class="flex flex-wrap ">
+
+        <div class="lg:w-2/3  py-2 md:w-1/2 w-full">
+          <a href="#home" class="flex  mb-10">
+            <img class="logo mr-4" src="http://localhost:8000/images/logo.png" />
+            <span id="" class="self-center text-3xl duration-300 whitespace-nowrap text-white">EngraveMaster</span>
+          </a>
+          <p class="self-center text-xl duration-300 xl:pr-40 lg:pr-16 sm:pb-10 text-white">dfsfse sfse fssef sf s
+            dsadas as das da d asda sd as ad as das da sd asd asd as as das d asd asd asd as as d asd asd </p>
+          <div class="flex xl:pr-40 lg:pr-16 sm:pb-10 ">
+            <svg class="mx-1 w-5 h-5 fill-white" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg>
+            <svg class="mx-1 w-5 h-5 fill-white" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+            </svg>
+            <svg class="mx-1 w-5 h-5 fill-white" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>Pinterest icon</title>
+              <path
+                d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z" />
+            </svg>
+          </div>
+        </div>
+
+
+
+        <div  class="lg:w-1/3 p-2 md:w-1/2 w-full">
+          <form>
+  <div class="mb-6">
+    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+    <input type="email" id="email"
+      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+      placeholder="name@flowbite.com" required="">
+  </div>
+  <div class="mb-6">
+    <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Full Name</label>
+    <input type="text" id="name" placeholder="Pantelis Georgiou"
+      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+      required="">
+  </div>
+  <div class="mb-6">
+    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+    <textarea id="message" rows="4"
+      class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+      placeholder="Leave a comment..." required=""></textarea>
+  </div>
+  
+  <button type="submit"
+    class="text-white bg-secondary hover:bg-primary font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center ">Submit</button>
+    
+</form>        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="text-white text-center p-2 bg-black opacity-90" >
+    © 2022 Copyright:
+    <a class="text-white" href="https://tailwind-elements.com/">EngraveMaster</a>
+  </div>
+
+
+
+
+  <div id="scroll-top" class="fixed bottom-12 right-12 hidden">
+    <button class="text-white bg-primary bg-opacity-70 rounded-md block">
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" class="h-10 w-10">
+          <path fill="currentColor" d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z"></path>
+        </svg>
+      </a>
+    </button>
+  </div>
+
+
+  <script src="https://unpkg.com/@themesberg/flowbite@1.3.0/dist/flowbite.bundle.js"></script>
+  <script src="http://localhost:8000/js/app.js"></script>
+  
+</body>
+
+</html>
