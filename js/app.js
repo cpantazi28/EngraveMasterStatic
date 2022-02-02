@@ -2062,7 +2062,7 @@
   
   __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
   
-  var transitionPosition = 250;
+  var transitionPosition = 50;
   var navigationId = "nav#navbar";
   var navigationTitle = "#navTitle";
   var scrollTopButton = "#scroll-top";
