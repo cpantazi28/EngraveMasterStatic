@@ -790,10 +790,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
-.bg-secondary{
-  --tw-bg-opacity: 1;
-  background-color: rgb(93 26 2 / var(--tw-bg-opacity));
-}
 .bg-blue-700{
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
@@ -881,11 +877,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .pb-4{
   padding-bottom: 1rem;
 }
-.pt-8{
-  padding-top: 2rem;
-}
 .pb-10{
   padding-bottom: 2.5rem;
+}
+.pt-8{
+  padding-top: 2rem;
 }
 .pt-4{
   padding-top: 1rem;
@@ -919,13 +915,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
 .text-5xl{
   font-size: 3rem;
   line-height: 1;
+}
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 .text-lg{
   font-size: 1.125rem;
@@ -1036,19 +1032,31 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 
-.logo{
+.logo {
     width: 100px;
     height: 100px;
 }
 
-.banner{
-    height: 500px;
+.banner {
+    height: 550px;
     /* background-image: url("/images/banner.png"); */
-    background:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/banner.png");
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/banner.png");
     background-size: cover;
 }
 
-.aboutPhoto{
+@media screen 
+  and (min-device-width: 100px) 
+  and (max-device-width: 700px) {
+
+    .banner {
+        height: 550px;
+        /* background-image: url("/images/banner.png"); */
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/banner_reversed.png");
+        background-size: cover;
+    }
+}
+
+.aboutPhoto {
     background: url("/images/traoullos.png");
     background-size: cover;
 
@@ -1058,50 +1066,50 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 /* Scroll bar style */
 body::-webkit-scrollbar {
-	width: 5px;
+    width: 5px;
 }
 
 body::-webkit-scrollbar-track {
-	--tw-bg-opacity: 1;
-	background-color: rgba(107, 114, 128, var(--tw-bg-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgba(107, 114, 128, var(--tw-bg-opacity));
 }
 
 body::-webkit-scrollbar-thumb {
-	background-color: rgba(0, 0, 0, 0.952);
-	border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.952);
+    border-radius: 20px;
 }
 
 /* special scroll calss*/
 .ss::-webkit-scrollbar {
-	width: 10px;
-	/* height: 5px; */
-	/* width of the entire scrollbar */
+    width: 10px;
+    /* height: 5px; */
+    /* width of the entire scrollbar */
 }
 
 .ss::-webkit-scrollbar-track {
-	--tw-bg-opacity: 1;
-	background-color: rgba(107, 114, 128, var(--tw-bg-opacity));
-	/* color of the tracking area */
+    --tw-bg-opacity: 1;
+    background-color: rgba(107, 114, 128, var(--tw-bg-opacity));
+    /* color of the tracking area */
 }
 
 .ss::-webkit-scrollbar-thumb {
-	background-color: rgba(0, 0, 0, 0.952);
-	/* color of the scroll thumb */
-	border-radius: 20px;
-	/* roundness of the scroll thumb */
-	/* creates padding around scroll thumb */
+    background-color: rgba(0, 0, 0, 0.952);
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    /* creates padding around scroll thumb */
 }
 
-html{
-	scroll-behavior: smooth;
+html {
+    scroll-behavior: smooth;
 }
 
 /* body{
 	background-color: #e9e9e9 ;
 } */
 
-.wood-bg{
-	background:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/images/wood-material.jpg");
+.wood-bg {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/images/wood-material.jpg");
     background-size: cover;
 }
 
@@ -1141,10 +1149,6 @@ html{
 .hover\:text-white:hover{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.hover\:opacity-10:hover{
-  opacity: 0.1;
 }
 
 .hover\:opacity-90:hover{
@@ -1291,10 +1295,6 @@ html{
   .sm\:px-6{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-  }
-
-  .sm\:pb-10{
-    padding-bottom: 2.5rem;
   }
 
   .sm\:pt-0{
@@ -1510,5 +1510,3 @@ html{
     padding-right: 10rem;
   }
 }
-
-
