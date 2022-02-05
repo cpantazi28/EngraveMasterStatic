@@ -2180,7 +2180,7 @@
     var email = document.querySelector('input#email').value;
     var name = document.querySelector('input#name').value;
     var message = document.querySelector('textarea#message').value;
-    window.open('mailto:pgeorgiou1174@gmail.com?subject=Engrave Master&body=' + message + "%0d%0a%0d%0aThanks you,%0d%0a" + name + ",%0d%0a" + email);
+    window.open('mailto:infoengravemaster@gmail.com?subject=Engrave Master&body=' + message + "%0d%0a%0d%0aThanks you,%0d%0a" + name + ",%0d%0a" + email);
   });
   
   /***/ }),
